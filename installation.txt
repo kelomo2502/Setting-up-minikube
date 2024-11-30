@@ -1,0 +1,20 @@
+
+Windows installation
+choco install minikube
+# To start
+minikube start --driver=docker
+
+Linux installation
+sudo apt-get update
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_latest_amd64.deb
+sudo dpkg -i minikube_latest_amd64.deb
+minikube start --driver=docker 
+sudo snap install kubectl --classic
+
+MacOS installation
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-darwin-amd64
+sudo install minikube-darwin-amd64 /usr/local/bin/minikube
+minikube start --driver=docker
+
+
+
